@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" value="vineetiet.gupta@gmail.com">
+	<link rel="stylesheet" type="text/css" href="css/resume.css">
+	<link rel="icon" href="favicon.png">
+	<title>Resume</title>
+</head>
+<body onload="loadResume()">
+
+<div class="half-square top-left">
+    <div class="horzntl"></div>
+    <div class="vertical"></div>
+</div>
+<div class="half-square top-right">
+    <div class="horzntl"></div>
+    <div class="vertical"></div>
+</div>
+ 	
+ 	<header>
+ 		<div class="title trans-from-top">
+ 			<img src="images/platform-stack-icon.png"/>
+ 			Application Developer
+ 		</div>
+ 		<div class="name trans-from-left">Vineet Gupta</div>
+        <hr>
+ 	</header>
+
+ 	<section class="main-section">
+ 			
+ 		<div class="side-menu">
+ 			<ul>
+ 			<li><a onclick="changeHash('summary')"><img src="images/star.png" class="star"/>Summary</a></li>
+            <li><a onclick="changeHash('tech')"><img src="images/star.png" class="star"/>I work with ... </a></li>
+            <li><a onclick="changeHash('exp')"><img src="images/star.png" class="star"/>Projects</a></li>
+            <li><a onclick="changeHash('profile')"><img src="images/star.png" class="star"/>Certifications</a></li>
+            <li><a onclick="showPopUp('')"><img src="images/star.png" class="star"/>Contact Me</a></li>
+
+ 			</ul>
+ 		</div>
+
+ 		<div class="main-content in-view">
+ 			<div id="summary">
+ 				
+ 				<div class="content-padding">
+
+ 					<div class="content-heading">
+ 						Summary
+ 					</div>
+
+ 					<div class="description">
+
+ 				   <div class="round-div uidev"><div class="transparency">UI Developer</div></div>
+                    <div class="round-div agile"><div class="transparency">Java</div></div>
+                    <div class="round-div tdd"></div>
+                    <div class="round-div rest"><div class="transparency">RESTFull API</div></div>
+                    <div class="round-div exp"><div class="transparency">8 Yrs Experience</div></div>
+                    <div class="round-div mis"><div class="transparency">MS in IT</div></div>
+ 						
+ 					</div>
+ 					
+ 				</div>
+ 			</div> <!-- summary -->
+
+ 			<div id="tech">
+
+                <div class="content-padding">
+                <div class="content-heading">
+                    I Work With...
+                </div>
+                <div class="description">
+                    <div>
+                        <img src="images/springboot.png"  width="300"/>
+                        <img src="images/hibernate.png"/>
+                        <img src="images/springmvc.png" width="200" />
+                        
+                        <img src="images/rabbitmq.jpg"/>
+                        <img src="images/oracle.png"/>
+                         <img src="images/bootstrap.jpg"/>
+                        <img src="images/angular.png" width="300"/>
+                        <img src="images/sass-less.png" width="360" />
+                       
+                        <img src="images/nodejs.png"/>
+                        <img src="images/jquery.png"/>
+                        <img src="images/html.png"/>
+                        <img src="images/combined.png"/>
+                        <img src="images/Hadoop.png"/>
+                        
+                    </div>
+                    <div> And many more ...</div>
+                </div>
+            </div>
+ 				
+ 			</div> <!-- tech -->
+
+ 			<div id="exp">
+
+                <div class="content-padding">
+                <div class="content-heading">
+                    Projects
+                </div>
+            </div>
+            <div class="description">
+                <ul class="projects">
+                    <li>
+                        <span class="project-name">UI Services </span>- EMC Corporation
+                        <div class="project-role">My role was a Senior Application Developer. Worked on creating Micro Services, Database design, MQTT, and front end components using Angular JS, JavaScript, JQuery, CSS3, HTML5, Sass.
+
+                            <div class="date">From: Aug 2014 - Dec 2015</div>
+                            <a href="https://community.emc.com/videos/39278" target="_blank">EMC USage Intelligence</a><br/>
+                           
+                        </div>
+                        <div class="project-accomplishment"></div>
+                    </li>
+                    <li>
+                        <span class="project-name">samsung-m-emr </span> -
+                        Samsung Research & Development
+                        <div class="project-role">My role was a Lead Engineer. Created a Push notification Service using ActiveMQ, JMS and MQTT for supporting 500 doctors and 2000 patients. I was also involved in the Sentimental analysis for conferences based tweets.
+                            <div class="date">From: Jan 2013 - Aug 2014</div>
+                            <a href="http://www.samsung.com/in/business/solutions-services/mobile-solutions/healthcare/samsung-m-emr" target="_blank">samsung-m-emr</a><br/>
+                        </div>
+                        <div class="project-accomplishment"></div>
+                    </li>
+                    <li>
+                        <span class="project-name">Market Risk </span>- HCL Technology
+                        <div class="project-role">My role was a Senior Software Engineer
+                            worked for Deutsche bank, I was involved in creating the Web components using HTML, CSS3, AJAX, and JQuery. I also worked with Spring MVC, Hibernate, and Caching.
+                            <div class="date">From: January 2011 - Dec 2013</div>
+                           
+                        </div>
+                    </li>
+
+                     <li>
+                        <span class="project-name">Bell Canada </span>- CGI 
+                        <div class="project-role">My role was a Software Engineer
+                            worked for Bell Canada, I was involved in creating the RESTFUL services and integrated with Oracle database.
+                            <div class="date">From: Nov 2007 - Jan 2011</div>
+                           
+                        </div>
+                    </li>
+                </ul>
+            </div>
+ 				
+ 			</div> <!-- exp -->
+
+
+              <div id="profile">
+            <div class="content-padding">
+                <div class="content-heading">
+                    Certifications
+                </div>
+                <div class="description">
+                   
+                    <ul >
+                        <li>
+                            <span class="project-name">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/9VXKG4DYTKSN" target="_blank">Responsive Web Design with JavaScript, Bootstrap, JQuery, HTML and CSS</a></span>
+
+                            <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="project-name"><a href="https://www.coursera.org/account/accomplishments/verify/5LZ9T9EFP67U" target="_blank">Responsive Website: Code with HTML, CSS and JavaScript</a></span>
+                              <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="project-name"><a href="https://www.coursera.org/account/accomplishments/records/NU7TSEQD2X4L" target="_blank">Single Page Web Application with Angular JS:</a></span>
+                              <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li><span class="project-name"><a href="https://www.coursera.org/account/accomplishments/records/KGBWWVLN6KHB" target="_blank">Introduction to Big Data by University of California, San Diego on Coursera: </a></span>
+                          <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li><span class="project-name"><a href="https://www.coursera.org/account/accomplishments/records/L9HED3HWSUN2" target="_blank">Hadoop Platform and Application Framework by University of California, San Diego on Coursera</a></span>
+
+                                  <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+
+                          <li><span class="project-name"><a href="">Cloudera Certified Administrator for Apache Hadoop CDH4 (CCA-410</a></span>
+
+                              <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                          </li>
+
+                            <li><span class="project-name"><a href="">Java Developer 1.5 certified from Sun Microsystem.</a></span>
+
+
+                                      <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            </li>
+
+                              <li><span class="project-name"><a href="https://www.teamleada.com/courses/intro-to-analytics-in-sql/dashboard">Introduction to Analytics in SQL [University]</a></span>
+
+                                  <div class="project-role row">
+                                <div></div>
+                                <div></div>
+                            </div>
+                              </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+ 			
+ 		</div> <!-- main content -->
+ 	</section>
+
+    <div class="overlay">
+   </div>
+
+   <div class="modal-wrapper">
+   <div class="contact">
+           <img src="images/vine.jpg"  width="100" height="100"/>
+           <div class="email">Email: vineetiet.gupta@gmail.com</div>
+           <div class="phnumber">ph: (815)593-3049</div>
+           
+
+   </div>
+</div>
+
+<script src="script/jquery.min.js"></script>
+<script src="script/resume.js"></script>
+</body>
+</html>
